@@ -15,7 +15,7 @@
         "symfony/symfony": "2.1.*"
     },
     "autoload":     {
-        "psr-0": { "Less\\CssBundle\\LessCssBundle": "" }
+        "psr-0": { "Less\\CssBundle": "" }
     },
-    "target-dir": "Less/CssBundle/LessCssBundle"
+    "target-dir": "Less/CssBundle"
 }
