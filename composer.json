@@ -1,0 +1,20 @@
+{
+    "name":         "skillberto/less-css-bundle",
+    "description":  "This bundle provides an integration of Less CSS JavaScript",
+    "keywords":     ["css","lesscss","lessjs"],
+    "type":         "symfony-bundle",
+    "license":      "MIT",
+    "authors":      [
+        {
+            "name":     "Heiszler Norbert",
+            "email":    "norbert.heiszler@w3lab.hu"
+        }
+    ],
+    "require":      {
+        "symfony/framework-bundle": ">=2.0,<2.3-dev"
+    },
+    "autoload":     {
+        "psr-0": { "Less\\Css\\LessCssBundle": "" }
+    },
+    "target-dir": "Less/Css/LessCssBundle"
+}
