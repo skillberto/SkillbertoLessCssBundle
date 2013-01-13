@@ -7,7 +7,7 @@
     "authors":      [
         {
             "name":     "Heiszler Norbert",
-            "email":    "norbert.heiszler@w3lab.hu"
+            "email":    "skillbertoo@gmail.com"
         }
     ],
     "require":      {
@@ -15,7 +15,7 @@
         "symfony/symfony": "2.1.*"
     },
     "autoload":     {
-        "psr-0": { "Less\\Css\\LessCssBundle": "" }
+        "psr-0": { "Less\\CssBundle\\LessCssBundle": "" }
     },
-    "target-dir": "Less/Css/LessCssBundle"
+    "target-dir": "Less/CssBundle/LessCssBundle"
 }
