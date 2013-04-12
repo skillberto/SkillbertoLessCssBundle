@@ -86,9 +86,17 @@ assetic:
 Now, you can use from the hood with assetic filter:
 ```
 {% stylesheets 'path/to/files.less' %}
-  <link rel="stylesheet" href="{{ assets_url }}" />
+  <link rel="stylesheet" href="{{ asset_url }}" />
 {% endstylesheets %} 
 ```
+
+### Run in console:
+```
+assets:install
+assetic:dump
+```
+
+The public data will be in `web` directory, and .less compiled to .css
 
 You can find this documentation, and some kind of other in this url:<br/>
 http://dividebyze.ro/178/how-to-use-less-css-and-symfony-2-in-harmony/
