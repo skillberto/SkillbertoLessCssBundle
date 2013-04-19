@@ -7,9 +7,16 @@ This Bundle initialize Less.js into Symfony2 Framework
 ### Setup:
 
 `app/AppKernel.php`:
+
+***Warning!***
+
+Namespace changed from `LessCss` to `Skillberto`.
+This declaration is deprecated:
+`new Less\CssBundle\LessCssBundle()`
+Correct:
 ```
 ...
-new Less\CssBundle\LessCssBundle()
+new Skillberto\LessCssBundle\SkillbertoLessCssBundle(),
 ...
 ```
 
