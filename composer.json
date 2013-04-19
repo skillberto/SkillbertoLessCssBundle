@@ -10,9 +10,12 @@
             "email":    "skillbertoo@gmail.com"
         }
     ],
-    "require":      {
+    "require": {
         "php": ">=5.3.3",
         "symfony/symfony": ">=2.1"
+    },
+    "suggest": {
+        "leafo/lessphp": "0.3.*@dev"
     },
     "autoload":     {
         "psr-0": { "Less\\CssBundle": "" }
