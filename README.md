@@ -1,15 +1,26 @@
 # LessJsBundle
 ===================
 
-This Bundle initialize Less.js into Symfony2 Framework
+This Bundle initializes Less.js into Symfony2 Framework
 
 ===================
 ### Setup:
 
 `app/AppKernel.php`:
+
+***Warning!***
+
+Namespace changed from
+`Less\CssBundle\LessCssBundle`
+to
+`Skillberto\LessCssBundle\SkillbertoLessCssBundle`.
+
+This declaration is deprecated:
+`new Less\CssBundle\LessCssBundle()`
+Correct:
 ```
 ...
-new Less\CssBundle\LessCssBundle()
+new Skillberto\LessCssBundle\SkillbertoLessCssBundle(),
 ...
 ```
 
@@ -37,9 +48,9 @@ With this mode, you can include your .less, eg: style.less 'css':
 ```
 <link rel="stylesheet/less" href="{{ asset('YOURBUNDLE/css/style.less') }}" />
 ```
-But this mode is <b>not secure</b>. Better way to copy into `web/css/` and include from this folder, or use next way.
+But this mode is <b>not secure</b>. Better way is to copy into `web/css/` and include from this folder, or use this other way.
 
-# Next way: Assetic filter method
+# Other way: Assetic filter method
 
 For this, you have to use Node, or some kind of PHP or other script.
 
@@ -58,7 +69,7 @@ assetic:
 ```
 
 ### With PHP:
-For example, good way the `leafo/lessphp`:
+For example,a good way is the `leafo/lessphp`:
 
 Put into composer.json:
 ```
